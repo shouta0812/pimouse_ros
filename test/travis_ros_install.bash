@@ -5,8 +5,6 @@ pip install catkin_pkg
 pip install empy
 pip install pyyaml
 pip install rospy
-sudo bundle install
-sudo gem install
 
 #ros install
 cd ..
