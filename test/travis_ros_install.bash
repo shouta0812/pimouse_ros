@@ -1,11 +1,5 @@
 #!/bin/bash -xve
 
-#required packages
-sudo pip install catkin_pkg
-sudo pip install empy
-sudo pip install pyyaml
-sudo pip install rospy
-
 #ros install
 cd ..
 git clone https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu14.04_server.git
