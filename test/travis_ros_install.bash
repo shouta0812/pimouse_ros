@@ -1,4 +1,6 @@
 #!/bin/bash -xve
+ 
+pip install catkin_pkg
 
 #ros install
 cd ..
