@@ -1,6 +1,5 @@
 #!/bin/bash -xve
  
-sudo apt-get install python-catkin-pkg
 
 #ros install
 cd ..
@@ -12,8 +11,8 @@ bash ./step1.bash
 #catkin setup
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-export PYTHONPATH="/opt/ros/indigo/lib/python2.7/dist-packages:$PYTHONPATH"
 source /opt/ros/indigo/setup.bash
 catkin_init_workspace
 cd ~/catkin_ws
+env | grep python
 catkin_make
