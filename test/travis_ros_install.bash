@@ -1,5 +1,6 @@
 #!/bin/bash -xve
  
+sudo apt-get install python-catkin-pkg
 
 #ros install
 cd ..
