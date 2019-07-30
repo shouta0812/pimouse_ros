@@ -1,6 +1,6 @@
 sudo: required
 language: python python : " 3.6-dev
-dist: xenial
+dist: trusty
 
 script:
   - bash -xve ./test/travis_ros_install.bash
