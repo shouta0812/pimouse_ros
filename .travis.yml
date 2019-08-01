@@ -1,8 +1,4 @@
-sudo: required
-cache:
-- apt
-language: generic
- 
+guage: generic
 
 # ros distro
 matrix:
@@ -27,7 +23,7 @@ before_install:
   # source & rosdep
   - source /opt/ros/$ROS_DISTRO/setup.bash
   - sudo rosdep init
-  - rosdep updat
+  - rosdep update
 
 install:
   # make catkin_ws
@@ -39,11 +35,8 @@ install:
   - source devel/setup.bash
   - cd ~/catkin_ws/src
   - ln -s $CI_SOURCE_PATH .
-  # additional src package for build
-  - git clone https://github.com/tysik/obstacle_detector.git
-
 
 script:
   # build
-  cd ~/catkin_ws
-  catkin_make
+  - cd ~/catkin_ws
+  - catkin_make
