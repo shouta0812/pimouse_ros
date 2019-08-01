@@ -1,8 +1,12 @@
 sudo: required
 cache:
 - apt
-language: python
-
+language: rudy
+rvm ：
+   - 1.9.3
+   - 2.0.0
+   - 2.1.0
+   - 2.1.1
 gem install bundler 
 gem install rake
 
