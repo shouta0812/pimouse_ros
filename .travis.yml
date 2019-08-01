@@ -42,4 +42,5 @@ script:
   - catkin_make
   - source ~/catkin_ws/devel/setup.bash
   - bash -xve ./test/travis_package_make.bash
+  - source ~/catkin_ws/devel/setup.bash
   - rostest pimouse_ros test.launch
