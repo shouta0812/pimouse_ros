@@ -1,5 +1,5 @@
 sudo: required
-language: python "3.6-dev"
+language:ruby
 dist:xenial
 
 script:
