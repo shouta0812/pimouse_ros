@@ -1,5 +1,6 @@
 sudo: required
 language:ruby
+ rvm: 2.5.3
 dist:xenial
 
 script:
