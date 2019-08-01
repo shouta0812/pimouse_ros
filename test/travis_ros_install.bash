@@ -1,6 +1,7 @@
 #!/bin/bash -xve
 
 #required packages
+gem install rake
 sudo pip install catkin_pkg
 sudo pip install empy
 sudo pip install pyyaml

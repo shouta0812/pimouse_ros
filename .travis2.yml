@@ -1,6 +1,5 @@
 sudo: required
 dist: xenial
-language: php
 
 script:
   - bash -xve ./test/travis_ros_install.bash
