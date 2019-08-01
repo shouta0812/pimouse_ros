@@ -1,7 +1,7 @@
 sudo: required
 cache:
 - apt
-language: ruby
+language: generic
  
 
 # ros distro
