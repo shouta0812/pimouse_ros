@@ -1,8 +1,11 @@
 sudo: required
 cache:
 - apt
-language: ptthon 
+language: python
+
+gem install bundler 
 gem install rake
+
 
 # ros distro
 matrix:
