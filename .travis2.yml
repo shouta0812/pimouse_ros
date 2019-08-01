@@ -1,7 +1,9 @@
 sudo: required
 language:ruby
- rvm: 2.5.3
+rvm:
+  - 2.5.3
 dist:xenial
+env: ROS_DISTRO=kinetic
 
 script:
   - bash -xve ./test/travis_ros_install.bash
