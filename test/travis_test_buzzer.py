@@ -9,7 +9,7 @@ class BuzzerTest(unittest.TestCase):
 	nodes = rosnode.get_node_names()
 	self.assertIn('/buzzer',nodes,"node dose not exist")
 
-   def test_put_value(self):
+    def test_put_value(self):
         pub = rospy.Publisher('/buzzer', UInt16)
         for i in range(10):
             pub.publish(1234)
