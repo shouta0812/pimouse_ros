@@ -44,7 +44,8 @@ script:
   - rsync -av ./ ~/catkin_ws/src/pimouse_ros/
   - cd ~/catkin_ws
   - catkin_make
-  
+
+  - source ~/catkin_ws/devel/setup.bash
   - sudo touch /dev/rt{buzzer,motor,motoren,motor_raw_{l,r}}0
   - sudo chmod 666 /dev/rt{buzzer,motor,motoren,motor_raw_{l,r}}0
   - echo "0 0 0 0" | sudo tee /dev/rtlightsensor0
