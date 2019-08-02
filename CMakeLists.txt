@@ -50,6 +50,7 @@ project(pimouse_ros)
  add_message_files(
    FILES
    LightSensorValues.msg
+   MotorFreqs.msg
  )
 
 ## Generate services in the 'srv' folder
